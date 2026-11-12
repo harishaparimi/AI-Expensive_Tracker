@@ -1,0 +1,8 @@
+.expTrack/
+.env
+.venv/
+*.db
+!samples/seed.db
+__pycache__/
+.pytest_cache/
+samples/real/

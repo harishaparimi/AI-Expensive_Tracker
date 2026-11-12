@@ -1,0 +1,26 @@
+# AI Expense Tracker - Python 3.14
+# Install: pip install -r requirements.txt
+
+# API server
+fastapi==0.162.0
+uvicorn==0.54.0
+python-multipart==0.0.33    # statement file uploads
+
+# Database (SQLite)
+sqlmodel==0.0.48
+
+# Statement import and analysis
+pandas==3.1.1
+openpyxl==3.1.5             # .xlsx statements
+pdfplumber==0.11.10         # PDF statements
+
+# LLM (OpenRouter) and live market data (mfapi.in), both plain HTTP calls
+requests==2.34.2
+
+# Web search for the chat (DuckDuckGo, no API key)
+ddgs==9.16.1
+
+# Config and tests
+python-dotenv==1.2.4
+pytest==9.2.0
+httpx2==2.16.0              # required by FastAPI's test client
