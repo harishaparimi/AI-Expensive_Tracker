@@ -476,6 +476,10 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
+> Run uvicorn from the activated `.venv`, or call it directly with
+> `.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload`. A uvicorn from another Python
+> install has none of the packages above, crashes on start and the browser shows `ERR_CONNECTION_REFUSED`.
+
 Open <http://127.0.0.1:8000>. A new browser starts with made-up demo data from `samples/seed.db`.
 Use **Upload statement**, or try `samples/demo_statement.csv` and `samples/demo_upi_statement.pdf`.
 
